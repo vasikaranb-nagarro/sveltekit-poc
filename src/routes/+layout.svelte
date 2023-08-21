@@ -1,10 +1,16 @@
 <script>
   import { onMount } from "svelte";
 
-  //   onMount(async () => {
-  //     const res = await System.import("simple-comp");
-  //     console.log(res);
-  //   });
+    // onMount(async () => {
+
+	// importShim("simple-comp").then(
+    //   (mod) => {
+    //     console.log(mod);
+    //   },
+    //   (err) => {
+    //     console.log( err);
+    //   })
+	// });
 </script>
 
 <simple-component message={"hello"} />

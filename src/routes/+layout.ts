@@ -3,7 +3,13 @@ import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
   if (browser) {
-    const res = await System.import("simple-comp");
-    console.log(res);
+    importShim("simple-comp").then(
+      (mod) => {
+        console.log(mod);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
   }
 }) satisfies LayoutLoad;
