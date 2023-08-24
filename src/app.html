@@ -5,9 +5,24 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
-	<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.7.3/dist/es-module-shims.min.js"></script>
-	<script type="importmap-shim"
-		src="https://d3uff2rn7yq1vl.cloudfront.net/db-test/servicemappingassets/qa/ImportsShim.json"></script>
+	<!-- <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.7.3/dist/es-module-shims.min.js"></script> -->
+	<!-- <script type="importmap"
+												src="https://d3uff2rn7yq1vl.cloudfront.net/db-test/servicemappingassets/qa/ImportsShim.json"></script> -->
+	
+	<script type="importmap"> {
+			"imports": {
+				"testwc": "https://cdn.jsdelivr.net/gh/vasikaranb-nagarro/fileExplorer@master/dist/file_explorer_wcv4.js",
+				"simple-comp": "https://cdn.jsdelivr.net/gh/vasikaranb-nagarro/testwc@master/dist/simplecomponent_v3.js",
+				"dayjs": "https://cdn.skypack.dev/dayjs@1.10.7"
+			}
+		}</script>
+	
+	<script type="module">
+		import dayjs from 'dayjs';
+		import * as simpleComponent from "simple-comp";
+
+		console.log(dayjs('2019-01-25').format('YYYY-MM-DDTHH:mm:ssZ[Z]'));
+	</script>
 	%sveltekit.head%
 </head>
 

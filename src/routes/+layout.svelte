@@ -1,5 +1,10 @@
-<script>
+<script >
   import { onMount } from "svelte";
+  // import { SimpleComponent } from "simple-comp"; 
+
+  //  import dayjs from 'dayjs';
+
+  // console.log(dayjs('2019-01-25').format('YYYY-MM-DDTHH:mm:ssZ[Z]'));
 
     // onMount(async () => {
 
