@@ -3,7 +3,6 @@ import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
   if (browser) {
-    const res = await System.import("simple-comp");
-    console.log(res);
+    await System.import("simple-comp");
   }
 }) satisfies LayoutLoad;
