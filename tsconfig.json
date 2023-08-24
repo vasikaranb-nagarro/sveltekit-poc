@@ -9,7 +9,6 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"types" : ["systemjs"]
 	},
 	"include": [
 		"index.d.ts",
